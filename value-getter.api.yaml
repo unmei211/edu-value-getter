@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Min Value Getter Api
+  description: Min Value Getter Api
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /value:
+    get:
+      summary: Find min value by step in xlsx table
+      parameters:
+        - name: path
+          in: query
+          required: true
+          description: Path to xlsx file
+          schema:
+            type: string
+        - name: step
+          in: query
+          required: true
+          description: Minimum number in an array with a step
+          schema:
+            type: integer
