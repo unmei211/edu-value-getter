@@ -11,3 +11,7 @@
 ## Запуск
 
 ```java -jar build/libs/edu-value-getter-0.0.1-SNAPSHOT.jar```
+
+## Зависимости:
+
+java 21
